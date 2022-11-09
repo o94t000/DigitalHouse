@@ -27,11 +27,13 @@ function selectProd(productos) {
         } else {
             console.log("El producto buscado no existe");
         }
-    let nuevaLista = productos.join(' ')
-    console.log(nuevaLista)
-    console.log(productos.length)
-    
-    return productos    
+    let nuevaLista = productos.join(' ');
+    console.log(nuevaLista);
+    console.log(productos.length);
+    let nuevaLista2 = nuevaLista.replace('Tostadora','Airfryer');
+    console.log (nuevaLista2)
+    console.log(nuevaLista2.split(' '))
+    return productos
 }
 
 console.log(selectProd(productos))
